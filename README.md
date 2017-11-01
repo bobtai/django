@@ -1,17 +1,21 @@
 # Django RESTful API 試做
 
 ## apps
-在 Django 中，以 app 來劃分模組。
+在 Django 中，是以 app 來劃分模組。
 
 ### trips app (djangosite/trips)
 RESTful API 試做，試做[結果](https://bobtai.pythonanywhere.com/)。
 
 ### uploader app (djangosite/uploader)
-上傳一張數字圖片，使用 Mnist Model 辨識圖片中的真實數字。試做結果如下：
+上傳一張數字圖片，使用 Mnist Model 辨識圖片中的真實數字，試做結果如下：
+
 準備一張數字圖片：
-![]()
+
+![img](https://raw.githubusercontent.com/bobtai/django/master/images/5.png)
+
 上傳結果：
-![]()
+
+![img](https://raw.githubusercontent.com/bobtai/django/master/images/uploader.png)
 
 ## 環境
 
