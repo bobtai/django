@@ -1,0 +1,12 @@
+<div style="padding:40px;margin:40px;border:1px solid #ccc">
+    <h1>請上傳一張數字的圖片：</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        {% csrf_token %} {{form}} 
+        <input type="submit" value="Upload" />
+    </form>
+    {% for img in images %}
+        <img src="{{ img.pic.url }}" height="100" width="100"> </br>
+        上傳日期：{{img.upload_date|date:"Y / m / d"}} </br>
+        辨識結果：{{img.description}}<hr /> </br>
+    {% endfor %}
+</div>
