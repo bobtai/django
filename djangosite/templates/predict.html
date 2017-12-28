@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="#" method="post">
+  	{% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form> 
+
+您輸入的問題為：{{form.question.value}} </br>
+辨識結果為：{{predict}}
+
+</body>
+</html>

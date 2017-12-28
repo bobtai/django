@@ -19,11 +19,13 @@ from django.conf.urls.static import static
 from django.contrib import admin
 
 import trips.views as tv
+import csai.views as cv
 from uploader.views import uploader
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', tv.home),
     url(r'^post/(?P<pk>\d+)/$', tv.post_detail, name='post_detail'),
+    url(r'^predict/', cv.get_prediction, name='get_prediction'),
     url(r'^upload/$', uploader, name='uploader'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

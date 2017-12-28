@@ -23,12 +23,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'y0#e-e#y^t148om^z0$)$^%b7%zif%ln^uh-7ils&ma$r0k-ie'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    'ec2-13-112-43-120.ap-northeast-1.compute.amazonaws.com',
+    '13.113.16.119',
+    'ec2-13-113-16-119.ap-northeast-1.compute.amazonaws.com',
 ]
 
 
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'trips',
     'uploader',
+    'csai',
 ]
 
 MIDDLEWARE = [
